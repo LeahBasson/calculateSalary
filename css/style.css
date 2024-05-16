@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{ 
+    margin-top: 10px;
+}
+
+.wrapper{
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+input[type=text]{
+    width: 20rem;
+    padding: 10px 0px;
+}
+
+label{
+    margin-top: 10px;
+}
+
