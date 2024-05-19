@@ -3,32 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Challenge 1</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <form class="wrapper">
+  <form class="wrapper" method="post">
     <h1>Please enter your information</h1>
 
-    <label>First name:</label><input type="text" placeholder="Enter your first name"></input>
-    <label>Last name: </label><input type="text" placeholder="Enter your last name"></input>
-    <label>Age:</label><input type="text"  placeholder="Enter your age"></input>
-    <label>Date of bith:</label><input type="text" placeholder="Enter yourD.O.B"></input>
-    <label>Select your gender:</label> 
-    <input type="radio">Female</input>
-    <input type="radio">Male</input>
-    <label>Greeting type:</label>
+    <div class="Info">
+      <label>First name:</label><input type="text" placeholder="Enter your first name" firstName required></input>
+      <p id="name_error"></p>
+      <label>Last name: </label><input type="text" placeholder="Enter your last name" lastName required></input>
+      <p id="error"></p>
+      <label>Age:</label><input type="text"  placeholder="Enter your age" age required></input>
+      <p id="error"></p>
+      <label>Date of bith:</label><input type="text" placeholder="Enter your D.O.B" dob required></input>
+      <p id="error"></p>
+    </div>
+   
+    <div class="gender">
+      <label>Select your gender:</label> 
+      <input type="radio">Female</input>
+      <input type="radio">Male</input>
+    </div>
+   
+    <div class="Type">
+      <label>Greeting type:</label>
     <input type="radio">Mr</input>
     <input type="radio">Mrs</input>
     <input type="radio">Miss</input>
     <input type="radio">Doctor</input>
-    <label>Select your subject/s:</label>
-    <input type="checkbox">HTML</input>
-    <input type="checkbox">CSS</input>
-    <input type="checkbox">JavaScript</input>
-    <input type="checkbox">Angular</input>
-    <input type="checkbox">VueJS</input> 
+    </div>
+    
+    <div class="Subjects">
+      <label>Select your subject/s:</label>
+      <input type="checkbox">HTML</input>
+      <input type="checkbox">CSS</input>
+      <input type="checkbox">JavaScript</input>
+      <input type="checkbox">Angular</input>
+      <input type="checkbox">VueJS</input>   
+    </div>
 
+    <div class="work">
+      <label>Are you working?</label>
+      <input type="radio" name="yes">Yes</input>
+      <input type="radio" name="no">No</input>
+   
+
+    <div id="provide">
+      <label>Provide your working hours:</label>
+      <input type="number" hours></input>
+      <label>Provide your rate:</label>
+      <input type="number" rate></input>
+      <button type="button" calculateSalary>Calculate</button>
+      <label class="salaryBox" salary></label>    
+    </div>
+  </div>
+    
+   
   </form>
     
     <script src="script/code.js"></script>
