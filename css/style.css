@@ -65,12 +65,12 @@ p{
     margin-top: 5rem;
 }
 
-input[name="yes"]:checked ~ #provide
+input[class="yes"]:checked ~ #provide
 {
         display: block;
 }
 
-input[name="no"]:checked ~ #provide {
+input[class="no"]:checked ~ #provide {
     display: none;
 }
 
@@ -84,6 +84,13 @@ input:not(:placeholder-shown) + #lastName_error{
 
 input:not(:placeholder-shown) + #age_error{
     visibility: hidden;
+}
+
+.positive {
+    border: 3px solid green;
+}
+.negative {
+    border: 3px solid red;
 }
     
 
