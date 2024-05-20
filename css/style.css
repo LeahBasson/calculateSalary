@@ -22,16 +22,16 @@ h1{
     background-color: rgb(190, 190, 255);
     display: flex;
     flex-flow: column;
-    padding: 2rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
-input[type=text]{
+input[type=text],[type=number],[type=date]{
     width: 30rem;
     padding: 0.5rem 1rem;
 }
 
 div{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 label{
@@ -73,5 +73,18 @@ input[name="yes"]:checked ~ #provide
 input[name="no"]:checked ~ #provide {
     display: none;
 }
+
+input:not(:placeholder-shown) + #name_error{
+    visibility: hidden;
+}
+
+input:not(:placeholder-shown) + #lastName_error{
+    visibility: hidden;
+}
+
+input:not(:placeholder-shown) + #age_error{
+    visibility: hidden;
+}
     
+
 
