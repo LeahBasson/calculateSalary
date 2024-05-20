@@ -11,14 +11,14 @@
     <h1>Please enter your information</h1>
 
     <div class="Info">
-      <label>First name:</label><input type="text" placeholder="Enter your first name" firstName required></input>
-      <p id="name_error"></p>
-      <label>Last name: </label><input type="text" placeholder="Enter your last name" lastName required></input>
-      <p id="error"></p>
-      <label>Age:</label><input type="text"  placeholder="Enter your age" age required></input>
-      <p id="error"></p>
-      <label>Date of bith:</label><input type="text" placeholder="Enter your D.O.B" dob required></input>
-      <p id="error"></p>
+      <label>First name:</label><input type="text" placeholder="Enter your first name" id="firstName" required></input>
+      <p id="name_error">This field is necessary</p>
+      <label>Last name: </label><input type="text" placeholder="Enter your last name" id="lastName" required></input>
+      <p id="lastName_error">This field is necessary</p>
+      <label>Age:</label><input type="number"  placeholder="Enter your age" id="age" required></input>
+      <p id="age_error">This field is necessary</p>
+      <label>Date of bith:</label><input type="date" placeholder=" " id="dob" required></input>
+      <p id="date_error">This field is necessary</p>
     </div>
    
     <div class="gender">
@@ -56,8 +56,11 @@
       <label>Provide your rate:</label>
       <input type="number" rate></input>
       <button type="button" calculateSalary>Calculate</button>
-      <label class="salaryBox" salary></label>    
+      <div>
+        <label class="salaryBox" salary></label>  
+      </div>  
     </div>
+
   </div>
     
    
