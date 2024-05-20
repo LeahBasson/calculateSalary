@@ -23,17 +23,18 @@
    
     <div class="gender">
       <label>Select your gender:</label> 
-      <input type="radio">Female</input>
-      <input type="radio">Male</input>
+      <input type="radio" name="gender">Female</input>
+      <input type="radio" name="gender">Male</input>
     </div>
    
     <div class="Type">
       <label>Greeting type:</label>
-    <input type="radio">Mr</input>
-    <input type="radio">Mrs</input>
-    <input type="radio">Miss</input>
-    <input type="radio">Doctor</input>
-    </div>
+      <input type="radio" name="option" value="Mr">Mr</input>
+      <input type="radio" name="option" value="Mrs">Mrs</input>
+      <input type="radio" name="option" value="Miss">Miss</input>
+      <input type="radio" name="option" value="Doctor">Doctor</input>
+  </div>
+  <p id="display"></p>
     
     <div class="Subjects">
       <label>Select your subject/s:</label>
@@ -46,15 +47,15 @@
 
     <div class="work">
       <label>Are you working?</label>
-      <input type="radio" name="yes">Yes</input>
-      <input type="radio" name="no">No</input>
+      <input type="radio" class="yes" name="work">Yes</input>
+      <input type="radio" class="no" name="work">No</input>
    
 
     <div id="provide">
       <label>Provide your working hours:</label>
-      <input type="number" hours></input>
+      <input type="number" hours id="numberInput1"></input>
       <label>Provide your rate:</label>
-      <input type="number" rate></input>
+      <input type="number" rate id="numberInput2"></input>
       <button type="button" calculateSalary>Calculate</button>
       <div>
         <label class="salaryBox" salary></label>  
